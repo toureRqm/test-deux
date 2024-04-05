@@ -1,0 +1,8 @@
+<div class="center-body">
+  <p *ngIf="!selectedFootballer; else playerInfo" class="text-center">
+    Sélectionner un joueur
+  </p>
+  <ng-template #playerInfo>
+    <p class="text-center">{{ selectedFootballer?.name }} joue pour {{ selectedFootballer?.club }}</p>
+  </ng-template>
+</div>
