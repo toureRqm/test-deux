@@ -1,7 +1,7 @@
 <div class="header">
-  <div class="logo"><img src="../../assets/bal.png" alt="Logo Gauche"></div>
+  <div class="logo"><img src="assets/bal.png" alt="Logo Gauche"></div>
   <div class="nom-joueur" *ngFor="let footballer of myService.footballers$ | async" (click)="selectFootballer(footballer)">
     {{ footballer.name }}
   </div>
-  <div class="logo"><img src="../../assets/bal.png" alt="Logo Droite"></div>
+  <div class="logo"><img src="assets/bal.png" alt="Logo Droite"></div>
 </div>
